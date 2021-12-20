@@ -76,6 +76,8 @@ class Lesson3HomeWork {
         }
 
     }
+    // 5 задание
+
     static int[] lengthAndInitialValue(int length, int initialValue) {
         int[] result = new int[length];
         int i;
