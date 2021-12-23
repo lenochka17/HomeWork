@@ -7,8 +7,6 @@
  */
 package com.javacourse.se.lesson3;
 
-import com.sun.istack.internal.NotNull;
-
 import java.util.Arrays;
 import java.util.Random;
 
@@ -32,14 +30,14 @@ class Lesson3HomeWork {
         changeArray(array1);
         System.out.println(Arrays.toString(array1));
 
-        int[][] square = new int[4][4];
-        fillDiagonal(square);
-        System.out.println(Arrays.toString(square));
 
-       int length = 3;
-       int initialValue = 6;
-        lengthAndInitialValue(length, initialValue);
+        int[][] doubleArr = new int[4][4];
+        fillArr4(doubleArr);
 
+
+
+        int[] result = fillArr5(12, 5);
+        System.out.println(Arrays.toString(result));
     }
 
     // 1 задание
@@ -70,18 +68,25 @@ class Lesson3HomeWork {
     }
 
     // 4 задание
-    static void fillDiagonal(int[][] square) {
-        for (int i = 0; i < square.length; i++) {
-            square[i][i] = 1;
+    public static void fillArr4(int[][] doubleArr) {
+        int n = doubleArr.length;
+        for (int i = 0; i < doubleArr.length; i++) {
+            for (int j = 0; j < doubleArr[i].length; j++) {
+                doubleArr[i][j] = 2;
+                if (i == j) {doubleArr[i][j] = 1;}
+                if (i == n-j-1) {doubleArr[i][j] = 1;}
+            }
         }
-
+        for (int i = 0; i < doubleArr.length; i++){
+            System.out.println(Arrays.toString(doubleArr[i]));
+        }
     }
-    // 5 задание
+        // 5 задание
 
-    static int[] lengthAndInitialValue(int length, int initialValue) {
-        int[] result = new int[length];
-        int i;
-        for(i =0; i < result.length; i++) {
+    public static int[] fillArr5(int len, int initialValue) {
+        int[] result;
+        result = new int[len];
+        for (int i = 0; i < result.length; i++) {
             result[i] = initialValue;
         }
         return result;
