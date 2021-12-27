@@ -1,3 +1,10 @@
+/*
+ * Java 1. Homework 4
+ *
+ * @ author Batanowa Elena
+ *
+ * @ version ideaIC-2021.3
+ */
 package com.javacourse.se.lesson4;
 
 import java.util.Scanner;

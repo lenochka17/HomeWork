@@ -1,3 +1,10 @@
+/*
+ * Java 1. Homework 5
+ *
+ * @ author Batanowa Elena
+ *
+ * @ version ideaIC-2021.3
+ */
 package com.javacourse.se.lesson5;
 
 public class Lesson5HomeWork {

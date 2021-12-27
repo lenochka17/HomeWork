@@ -1,23 +1,33 @@
+/*
+ * Java 1. Homework 1
+ *
+ * @ author Batanowa Elena
+ *
+ * @ version ideaIC-2021.3
+ */
 package com.javacourse.se.lesson1;
 
 public class Lesson1HomeWork {
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();
     }
+
     static void printThreeWords() {
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
 
     }
+
     static void checkSumSign() {
         int a = 5;
         int b = -10;
         System.out.println("Sum is " + (a + b >= 0 ? "positive" : "negative"));
     }
+
     static void printColor() {
         int value = 120;
         if (value <= 0) {
@@ -28,6 +38,7 @@ public class Lesson1HomeWork {
             System.out.println("Green");
         }
     }
+
     static void compareNumbers() {
         int a = -15;
         int b = 30;

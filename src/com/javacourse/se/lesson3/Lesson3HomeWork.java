@@ -35,7 +35,6 @@ class Lesson3HomeWork {
         fillArr4(doubleArr);
 
 
-
         int[] result = fillArr5(12, 5);
         System.out.println(Arrays.toString(result));
     }
@@ -73,15 +72,19 @@ class Lesson3HomeWork {
         for (int i = 0; i < doubleArr.length; i++) {
             for (int j = 0; j < doubleArr[i].length; j++) {
                 doubleArr[i][j] = 2;
-                if (i == j) {doubleArr[i][j] = 1;}
-                if (i == n-j-1) {doubleArr[i][j] = 1;}
+                if (i == j) {
+                    doubleArr[i][j] = 1;
+                }
+                if (i == n - j - 1) {
+                    doubleArr[i][j] = 1;
+                }
             }
         }
-        for (int i = 0; i < doubleArr.length; i++){
+        for (int i = 0; i < doubleArr.length; i++) {
             System.out.println(Arrays.toString(doubleArr[i]));
         }
     }
-        // 5 задание
+    // 5 задание
 
     public static int[] fillArr5(int len, int initialValue) {
         int[] result;

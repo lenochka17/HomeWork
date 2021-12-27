@@ -1,6 +1,13 @@
+/*
+ * Java 1. Homework 2
+ *
+ * @ author Batanowa Elena
+ *
+ * @ version ideaIC-2021.3
+ */
 package com.javacourse.se.lesson2;
 
-public class Main {
+public class Lesson2HomeWork {
     public static void main(String[] args) {
         int a = 5;
         int b = 4;
